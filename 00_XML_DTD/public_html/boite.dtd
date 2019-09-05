@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+boite
+- contient de 0 à N couleurs
+- possède éventuellement une capacité
+- a une dimension composée d'une largeur, d'une hauteur et d'une longueur
+
+Une couleur possède un attribut typeDeCouleur qui peut être rouge 
+ou vert ou bleu ou blanc.
+Par défaut la couleur est "blanc"
+-->
+<!ELEMENT boite (couleur*,capacite?,dimensions)>
+<!ELEMENT dimensions (largeur,hauteur,longueur)>
+<!ELEMENT capacite (#PCDATA)>
+<!ELEMENT largeur (#PCDATA)>
+<!ELEMENT hauteur (#PCDATA)>
+<!ELEMENT longueur (#PCDATA)>
+<!ELEMENT couleur EMPTY>
+<!ATTLIST couleur typeDeCouleur (rouge|vert|bleu|blanc) "blanc">

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/boite2.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE boite SYSTEM "boite2.dtd">
+
+    <boite>
+    ...
+    </boite>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT boite (couleur|capacite|dimensions)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT couleur EMPTY>
+<!ATTLIST couleur
+    typeDeCouleur CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT capacite (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT dimensions (largeur|hauteur|longueur)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT largeur (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT hauteur (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT longueur (#PCDATA)>
