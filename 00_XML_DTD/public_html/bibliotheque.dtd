@@ -6,3 +6,8 @@
 <!ELEMENT ouvrage (titre,auteur?,numOuvrage?)>
 
 <!ATTLIST ouvrage typeOuvrage (litterature|manuelScolaire|periodique|scienceEtTechnique) "litterature" >
+<!ELEMENT numAllee (#PCDATA)>
+<!ELEMENT numRayon (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT numOuvrage (#PCDATA)>

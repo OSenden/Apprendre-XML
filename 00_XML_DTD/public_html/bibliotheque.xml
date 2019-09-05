@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE biblio SYSTEM "bibliotheque.dtd" >
 
+<?xml-stylesheet href="bibliotheque.xsl" type="text/xsl" ?>
 
 <biblio>
     
@@ -38,7 +39,7 @@
             </ouvrage>
             <ouvrage typeOuvrage="litterature">
                 <titre>Harry Potter</titre>
-                <auteur>JK Rolling</auteur>
+                <auteur>JK Rowling</auteur>
                 <numOuvrage>1</numOuvrage>
             </ouvrage>
         </unRayon>
